@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data></data>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@color/beautyfy_brown"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+
+        android:id="@+id/img_salon_logo"
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="@dimen/_110sdp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_launcher"
+        />
+
+    <HorizontalScrollView
+        android:id="@+id/hrzscroll_salon_name"
+        android:layout_below="@+id/img_salon_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:scrollbars="none"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.beatutify.customviews.NMGTextView
+            android:id="@+id/txt_salon_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            app:fontName="oswald_regular.ttf"
+            android:textSize="@dimen/label_text_size"
+            android:text="Kinki crowns naturals"/>
+    </HorizontalScrollView>
+
+    <com.beatutify.customviews.NMGTextView
+        android:id="@+id/txt_pickup_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hrzscroll_salon_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:textColor="@color/colorWhite"
+        android:text="23 Feb, 2018"
+        app:textAllCaps="true"
+        app:fontName="sf_ui_text_light.otf"
+        android:textSize="@dimen/txt_bigger_size"/>
+
+
+
+</RelativeLayout>
+</layout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.TabLayout
+        android:id="@+id/date_picker_week_day_tab_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMaxWidth="0dp"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        style="@style/AppCustomTabLayout"
+        android:background="@color/colorWhite"
+        />
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/day_item_grid_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/_65sdp"
+    android:clipToPadding="false"
+    android:layout_below="@id/date_picker_week_day_tab_lay"
+    >
+
+</android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

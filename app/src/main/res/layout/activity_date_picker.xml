@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.beatutify.activity.DatePickerActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beautify_light_black"
+    >
+    <com.beatutify.datepicker.AppDatePicker
+        android:id="@+id/app_date_picker"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.beatutify.datepicker.AppDatePicker>
+
+    <com.beatutify.customviews.NMGButton
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:background="@drawable/button_default_flat_bg"
+        android:text="@string/next"
+        android:clickable="true"
+        android:textColor="@color/beautify_text_white"
+        android:layout_alignParentBottom="true"
+        android:textSize="@dimen/btn_txt_size"
+
+        />
+</RelativeLayout>
+</layout>

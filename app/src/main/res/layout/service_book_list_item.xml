@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_5sdp"
+    app:cardElevation="@dimen/_5sdp"
+    android:layout_marginLeft="@dimen/_10sdp"
+    android:layout_marginRight="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+    >
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/beautify_light_black"
+
+    android:padding="@dimen/_15sdp"
+
+    >
+<LinearLayout
+    android:id="@+id/service_book_lay_1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+<com.beatutify.customviews.NMGTextView
+    android:id="@+id/service_name_tv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Hair Cutting"
+    app:textAllCaps="true"
+    android:textStyle="bold"
+    android:textSize="@dimen/_16sdp"
+    android:textColor="@color/colorWhite"
+    />
+<TextView
+    android:id="@+id/service_duration_tv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="(Duration: 20 min)"
+    android:textSize="@dimen/_12sdp"
+    android:textColor="@color/colorTxtDimGray"
+    />
+    <TextView
+        android:id="@+id/service_desc_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum lorem"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/colorTxtDimGray"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/separatorColorDark"
+        android:layout_marginTop="@dimen/_15sdp"
+        />
+</LinearLayout>
+    
+  <LinearLayout
+      android:layout_below="@id/service_book_lay_1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+      <TextView
+          android:id="@+id/employee_name_tv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:textSize="@dimen/_12sdp"
+          android:text="Employee Name"
+          android:padding="@dimen/_10sdp"
+          android:textColor="@color/colorTxtDimGrayL"
+          android:drawableLeft="@drawable/ic_user"
+          android:drawableTint="@color/colorAccent"
+          android:drawablePadding="@dimen/_5sdp"
+          android:gravity="center_vertical"
+
+          />
+      <TextView
+          android:id="@+id/date_time_tv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:textSize="@dimen/_12sdp"
+          android:text="23 Feb, 2:30 PM"
+          android:padding="@dimen/_10sdp"
+          android:textColor="@color/colorTxtDimGrayL"
+          android:drawableLeft="@drawable/ic_calendar"
+          android:drawableTint="@color/colorAccent"
+          android:drawablePadding="@dimen/_5sdp"
+          android:gravity="center_vertical"
+
+          />
+  </LinearLayout>
+    <ImageView
+        android:id="@+id/delete_service_booking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_delete"
+        android:layout_alignParentRight="true"
+        android:tint="@color/colorTxtDimGrayL"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        />
+    <ImageView
+        android:id="@+id/edit_service_booking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_edit"
+        android:tint="@color/colorTxtDimGrayL"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:layout_toLeftOf="@id/delete_service_booking"
+        />
+
+</RelativeLayout>
+</android.support.v7.widget.CardView>

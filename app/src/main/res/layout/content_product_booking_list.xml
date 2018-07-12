@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data></data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.beatutify.activity.MarriageBookingListActivity"
+        tools:showIn="@layout/activity_marriage_booking_list">
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_55sdp"
+            android:id="@+id/lnrlay_upcoming_past_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:weightSum="2">
+
+            <com.beatutify.customviews.NMGButton
+                android:id="@+id/btn_product_book_upcomming"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_weight="1"
+                android:background="@drawable/button_left_corner_round_brown"
+                android:text="@string/upcoming"
+                android:textSize="@dimen/btn_txt_size"
+                app:fontName="oswald_regular.ttf"
+                android:textColor="@color/colorWhite"/>
+            <com.beatutify.customviews.NMGButton
+                android:id="@+id/btn_product_book_past"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_weight="1"
+                android:text="@string/past"
+                android:textSize="@dimen/btn_txt_size"
+                android:textColor="@color/beutify_light_white"
+                app:fontName="oswald_regular.ttf"
+                android:background="@drawable/button_right_corner_round_white" />
+        </LinearLayout>
+        <com.beatutify.customviews.NMGTextView
+            android:id="@+id/txt_no_booking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/_30sdp"
+            android:text="@string/no_booking_found"
+            android:textColor="@color/beautyfy_brown"
+            app:fontName="oswald_regular.ttf"
+            android:textAllCaps="true"
+            android:visibility="gone">
+
+        </com.beatutify.customviews.NMGTextView>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_product_booking_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_below="@+id/lnrlay_upcoming_past_btn"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            >
+            </android.support.v7.widget.RecyclerView>
+
+        <!--<ScrollView
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_below="@+id/lnrlay_upcoming_past_btn"
+            android:layout_width="match_parent"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:visibility="visible"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:layout_height="match_parent">
+
+            <include android:id="@+id/layout_procuct_booking_list_row"
+                layout="@layout/product_booking_list_row"/>
+        </ScrollView>-->
+
+
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.beatutify">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="@string/google_maps_key" />
+
+    <application
+        android:name=".BeautifyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true">
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BeautifyTheme" />
+        <activity
+            android:name=".activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.StatusBar.Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.StatusBar.Transparent"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BeautifyTheme">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.DetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.StatusBar.Transparent" />
+        <activity
+            android:name=".activity.SignUpActivity"
+            android:theme="@style/AppTheme.StatusBar.Transparent"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.ForgotPasswordActivity"
+            android:theme="@style/AppTheme.StatusBar.Transparent"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.ResetPassActivity"
+            android:theme="@style/AppTheme.StatusBar.Transparent"
+            android:windowSoftInputMode="adjustPan" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".activity.ViewMapDirectionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ServiceSelectActivity"
+            android:theme="@style/BeautifyTheme.ServiceBooking" />
+        <activity
+            android:name=".activity.MarriageBookingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BeautifyThemeBrownish"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.EmployeeSelectActivity"
+            android:theme="@style/BeautifyTheme.ServiceBooking" />
+        <activity
+            android:name=".activity.DatePickerActivity"
+            android:theme="@style/BeautifyTheme.ServiceBooking" />
+        <activity
+            android:name=".activity.TimeSlotPickerActivity"
+            android:theme="@style/BeautifyTheme.ServiceBooking" />
+        <activity
+            android:name=".activity.ServiceBookNowActivity"
+            android:theme="@style/BeautifyTheme.ServiceBooking" />
+        <activity
+            android:name=".activity.OrderPlacedActivity"
+            android:theme="@style/BeautifyTheme" />
+        <activity
+            android:name=".activity.MarriageBookingListActivity"
+            android:label="@string/title_activity_marriage_booking_list"
+            android:theme="@style/BeautifyThemeBrownish" />
+
+        <activity
+            android:name=".activity.MarriageBookingDetailActivity"
+            android:label="@string/title_activity_marriage_booking_detail"
+            android:theme="@style/BeautifyThemeBrownish" />
+        <activity
+            android:name=".activity.ProductBookingListActivity"
+            android:label="@string/title_activity_product_booking_list"
+            android:theme="@style/BeautifyThemeBrownish" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="@string/facebook_authorities"
+            android:exported="true" />
+
+        <activity
+            android:name=".activity.ProductBookingDetailActivity"
+            android:label="@string/title_activity_product_booking_detail"
+            android:screenOrientation="portrait"
+            android:theme="@style/BeautifyThemeBrownish" />
+        <activity
+            android:name=".activity.ReservedProductDetailActivity"
+            android:label="@string/title_activity_reserved_product_detail"
+            android:theme="@style/BeautifyThemeBrownish" />
+        <activity
+            android:name=".activity.MyProfileActivity"
+            android:theme="@style/BeautifyTheme.MyActivities.NoActionBar" />
+        <activity
+            android:name=".activity.ChangePasswordActivity"
+            android:theme="@style/BeautifyTheme.MyActivities" />
+        <activity android:name=".activity.ContactUsActivity" />
+        <activity
+            android:name=".activity.SettingActivity"
+            android:theme="@style/BeautifyTheme.MyActivities" />
+        <activity
+            android:name=".activity.CMSActivity"
+            android:theme="@style/BeautifyTheme.MyActivities" />
+        <activity
+            android:name=".activity.NotificationListActivity"
+            android:theme="@style/BeautifyTheme.MyActivities" />
+        <activity
+            android:name=".activity.GeneralBookingListActivity"
+            android:label="@string/title_activity_general_booking_list"
+            android:theme="@style/BeautifyThemeBrownish" />
+        <activity
+            android:name=".activity.GeneralBookingDetailActivity"
+            android:label="@string/title_activity_general_booking_detail"
+            android:theme="@style/BeautifyThemeBrownish" />
+    </application>
+
+</manifest>

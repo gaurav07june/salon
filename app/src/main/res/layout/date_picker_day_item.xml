@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/beautify_light_black"
+    >
+    <LinearLayout
+        android:id="@+id/month_tag_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/_20sdp"
+        android:paddingBottom="@dimen/_10sdp">
+<TextView
+    android:id="@+id/month_name_tv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="MON"
+    android:textSize="@dimen/_14sdp"
+    android:textStyle="bold"
+    android:gravity="center_horizontal"
+    android:textColor="@color/colorAccent"
+    />
+
+    <TextView
+        android:id="@+id/year_name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2018"
+        android:textSize="@dimen/_10sdp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorAccent"
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/day_item_name_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/separatorColorDark"
+        />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:padding="@dimen/_5sdp"
+        >
+    <TextView
+        android:id="@+id/day_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/date_item_selector"
+        android:text="1"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/colorWhite"
+        android:gravity="center"
+        />
+    </FrameLayout>
+</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.beatutify.customviews.NMGTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_8sdp"
+    android:textSize="@dimen/_12sdp"
+    android:maxLines="1"
+    android:textColor="@color/beautify_text_light_white"
+    android:drawablePadding="@dimen/_5sdp"
+    app:fontName="sf_ui_text_regular.otf">
+
+</com.beatutify.customviews.NMGTextView>

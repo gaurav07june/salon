@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beautify_light_black"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_order_placed" />
+
+        <com.beatutify.customviews.NMGTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="@string/order_placed"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_20sdp"
+            app:fontName="oswald_bold.ttf" />
+
+        <com.beatutify.customviews.NMGTextView
+            android:id="@+id/txt_order_placed_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:textColor="@color/beautify_text_light_white"
+            android:gravity="center"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            app:fontName="sf_ui_text_regular.otf" />
+
+
+        <RelativeLayout
+            android:id="@+id/add_more_services_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:background="@drawable/round_search_layout"
+            android:gravity="center">
+
+            <com.beatutify.customviews.NMGTextView
+                android:id="@+id/add_more_services_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="ADD MORE SERVICES"
+                app:fontName="oswald_regular.ttf"
+                android:textColor="@color/beautyfy_brown"
+                android:textSize="@dimen/_16sdp" />
+
+            <ImageView
+                android:layout_width="@dimen/small_icon_size"
+                android:layout_height="@dimen/small_icon_size"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/add_more_services_tv"
+                android:src="@drawable/ic_add_round" />
+
+        </RelativeLayout>
+
+        <com.beatutify.customviews.NMGTextView
+            android:id="@+id/order_placed_skip_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:text="@string/skip"
+            android:textSize="@dimen/_14sdp"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            app:fontName="oswald_regular.ttf" />
+    </LinearLayout>
+
+
+</RelativeLayout>

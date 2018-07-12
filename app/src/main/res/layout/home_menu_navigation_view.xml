@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/home_menu_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/home_menu_logo"
+        android:tint="@color/beautify_light_black"
+        android:layout_marginTop="@dimen/_15sdp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/home_menu_logo"
+        android:paddingLeft="@dimen/_15sdp"
+        android:paddingRight="@dimen/_15sdp"
+        android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/user_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/home_menu_user_img_iv"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@mipmap/ic_launcher" />
+
+            <com.beatutify.customviews.NMGTextView
+                android:id="@+id/home_menu_user_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sam Doe"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_18sdp"
+                app:fontName="oswald_bold.ttf"
+
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/menu_list_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:orientation="vertical"
+            >
+
+            <com.beatutify.customviews.NMGTextView
+                android:id="@+id/menu_action_dashboard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/home_menu_item_bg"
+                android:drawableLeft="@drawable/ic_menu_grid"
+                android:drawablePadding="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_12sdp"
+                android:paddingTop="@dimen/_12sdp"
+                android:text="Dashboard"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_14sdp"
+                app:fontName="sf_ui_text_regular.otf"
+
+                />
+
+            <com.beatutify.customviews.NMGTextView
+                android:id="@+id/menu_action_my_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/_12sdp"
+                android:paddingBottom="@dimen/_12sdp"
+                android:text="My Profile"
+                android:textColor="@color/colorBlack"
+                app:fontName="sf_ui_text_regular.otf"
+                android:textSize="@dimen/_14sdp"
+                android:drawableLeft="@drawable/ic_menu_user"
+                android:drawablePadding="@dimen/_10sdp"
+                android:background="@drawable/home_menu_item_bg"
+
+                />
+            <com.beatutify.customviews.NMGTextView
+                android:id="@+id/menu_action_about_us"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/_12sdp"
+                android:paddingBottom="@dimen/_12sdp"
+                android:text="About Us"
+                android:textColor="@color/colorBlack"
+                app:fontName="sf_ui_text_regular.otf"
+                android:textSize="@dimen/_14sdp"
+                android:drawableLeft="@drawable/ic_menu_user"
+                android:drawablePadding="@dimen/_10sdp"
+                android:background="@drawable/home_menu_item_bg"
+
+                />
+            <RelativeLayout
+                android:id="@+id/menu_action_notification"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <com.beatutify.customviews.NMGTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/_12sdp"
+                android:paddingBottom="@dimen/_12sdp"
+                android:text="@string/notifications"
+                android:textColor="@color/colorBlack"
+                app:fontName="sf_ui_text_regular.otf"
+                android:textSize="@dimen/_14sdp"
+                android:drawableLeft="@drawable/ic_menu_bell"
+                android:drawablePadding="@dimen/_10sdp"
+                android:background="@drawable/home_menu_item_bg"
+
+                />
+                <TextView
+                    android:id="@+id/notification_badge_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/notification_badge_bg"
+                    android:text="2"
+                    android:elevation="@dimen/_2sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/colorWhite"
+                    android:gravity="center"
+                    />
+            </RelativeLayout>
+            <com.beatutify.customviews.NMGTextView
+                android:id="@+id/menu_action_settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/_12sdp"
+                android:paddingBottom="@dimen/_12sdp"
+                android:text="Settings"
+                android:textColor="@color/colorBlack"
+                app:fontName="sf_ui_text_regular.otf"
+                android:textSize="@dimen/_14sdp"
+                android:drawableLeft="@drawable/ic_menu_settings"
+                android:drawablePadding="@dimen/_10sdp"
+                android:background="@drawable/home_menu_item_bg"
+
+                />
+            <com.beatutify.customviews.NMGTextView
+                android:id="@+id/menu_action_my_favorite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/_12sdp"
+                android:paddingBottom="@dimen/_12sdp"
+                android:text="My Favorite"
+                android:textColor="@color/colorBlack"
+                app:fontName="sf_ui_text_regular.otf"
+                android:textSize="@dimen/_14sdp"
+                android:drawableLeft="@drawable/ic_menu_heart"
+                android:drawablePadding="@dimen/_10sdp"
+                android:background="@drawable/home_menu_item_bg"
+
+                />
+            <com.beatutify.customviews.NMGTextView
+                android:id="@+id/menu_action_contact_us"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/_12sdp"
+                android:paddingBottom="@dimen/_12sdp"
+                android:text="Contact Us"
+                android:textColor="@color/colorBlack"
+                app:fontName="sf_ui_text_regular.otf"
+                android:textSize="@dimen/_14sdp"
+                android:drawableLeft="@drawable/ic_menu_phone"
+                android:drawablePadding="@dimen/_10sdp"
+                android:background="@drawable/home_menu_item_bg"
+
+                />
+            <com.beatutify.customviews.NMGTextView
+                android:id="@+id/menu_action_t_and_c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/_12sdp"
+                android:paddingBottom="@dimen/_12sdp"
+                android:text="Terms and Conditions"
+                android:textColor="@color/colorBlack"
+                app:fontName="sf_ui_text_regular.otf"
+                android:textSize="@dimen/_14sdp"
+                android:drawableLeft="@drawable/ic_menu_file"
+                android:drawablePadding="@dimen/_10sdp"
+                android:background="@drawable/home_menu_item_bg"
+
+                />
+            <com.beatutify.customviews.NMGTextView
+                android:id="@+id/menu_action_privacy_policy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/_12sdp"
+                android:paddingBottom="@dimen/_12sdp"
+                android:text="Privacy Policy"
+                android:textColor="@color/colorBlack"
+                app:fontName="sf_ui_text_regular.otf"
+                android:textSize="@dimen/_14sdp"
+                android:drawableLeft="@drawable/ic_menu_file"
+                android:drawablePadding="@dimen/_10sdp"
+                android:background="@drawable/home_menu_item_bg"
+
+                />
+
+            <com.beatutify.customviews.NMGTextView
+                android:id="@+id/menu_action_share_app"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/_12sdp"
+                android:paddingBottom="@dimen/_12sdp"
+                android:text="Share App"
+                android:textColor="@color/colorBlack"
+                app:fontName="sf_ui_text_regular.otf"
+                android:textSize="@dimen/_14sdp"
+                android:drawableLeft="@drawable/ic_menu_share"
+                android:drawablePadding="@dimen/_10sdp"
+                android:background="@drawable/home_menu_item_bg"
+
+                />
+            <com.beatutify.customviews.NMGTextView
+                android:id="@+id/menu_action_rate_us"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/_12sdp"
+                android:paddingBottom="@dimen/_12sdp"
+                android:text="Rate Us"
+                android:textColor="@color/colorBlack"
+                app:fontName="sf_ui_text_regular.otf"
+                android:textSize="@dimen/_14sdp"
+                android:drawableLeft="@drawable/ic_menu_star"
+                android:drawablePadding="@dimen/_10sdp"
+                android:background="@drawable/home_menu_item_bg"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/home_menu_close_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_close_black_24dp"
+        android:padding="@dimen/_10sdp"
+        android:layout_alignParentRight="true"
+        />
+</RelativeLayout>
+</ScrollView>
+</layout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:background="@color/colorBlack"
+        android:orientation="vertical"
+        tools:context="com.beatutify.activity.SettingActivity">
+
+        <RelativeLayout
+            android:id="@+id/setting_menu_action_notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/_18sdp"
+            android:paddingBottom="@dimen/_18sdp"
+            android:paddingLeft="@dimen/_8sdp"
+            android:paddingRight="@dimen/_8sdp"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:background="@drawable/setting_menu_item_bg"
+            >
+
+            <com.beatutify.customviews.NMGTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/notification"
+                android:textSize="@dimen/_14sdp"
+                app:fontName="sf_ui_text_regular.otf"
+                />
+
+            <com.rey.material.widget.Switch
+                style="@style/Material.Widget.Switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:sw_thumbColor="@drawable/beautify_switch_thum_color_selector"
+                app:sw_trackColor="@drawable/beautify_switch_track_color_selector"
+                app:sw_trackSize="@dimen/_15sdp"
+                app:sw_thumbRadius="@dimen/_10sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:checked="false"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/setting_menu_action_change_lang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/_8sdp"
+            android:paddingRight="@dimen/_8sdp"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            >
+
+            <com.beatutify.customviews.NMGTextView
+                android:id="@+id/change_language_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/change_language"
+                android:textSize="@dimen/_14sdp"
+                app:fontName="sf_ui_text_regular.otf"
+                />
+            <LinearLayout
+                android:layout_below="@id/change_language_tv"
+                android:id="@+id/language_setting_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/_8sdp"
+                android:paddingTop="@dimen/_8sdp"
+                android:background="@drawable/setting_menu_item_bg"
+                android:gravity="center"
+                >
+                <com.rey.material.widget.RadioButton
+                    android:id="@+id/english_lang_radio_btn"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="wrap_content"
+
+                    android:padding="@dimen/_8sdp"
+                    app:rbd_strokeColor="@color/colorAccent"
+                    android:checked="false"
+                    android:text="English"
+                    android:textSize="@dimen/_14sdp"
+                    android:gravity="center"
+                    />
+                <com.rey.material.widget.RadioButton
+                    android:id="@+id/arabic_lang_radio_btn"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_8sdp"
+                    android:layout_marginLeft="@dimen/_25sdp"
+                    app:rbd_strokeColor="@color/colorAccent"
+                    android:checked="false"
+                    android:text="Arabic"
+                    android:textSize="@dimen/_14sdp"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/setting_menu_action_change_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_15sdp"
+            android:paddingLeft="@dimen/_8sdp"
+            android:paddingRight="@dimen/_8sdp"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+
+            >
+
+            <com.beatutify.customviews.NMGTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/change_password"
+                android:textSize="@dimen/_14sdp"
+                app:fontName="sf_ui_text_regular.otf"
+                />
+
+            <ImageView
+                android:id="@+id/arrow_toggle_change_pass"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:scaleType="center"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_right_arrow" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</layout>

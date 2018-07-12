@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1F1F1F</color>
+    <color name="colorPrimaryDark">#060605</color>
+    <color name="colorAccent">#B99F61</color>
+    <color name="colorGray1">#7f7d7e</color>
+    <color name="dimGray">#737373</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorTxtDimGray">#7f7d7e</color>
+    <color name="colorTxtDimGrayL">#989797</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorBlackTransparent">#80000000</color>
+    <color name="colorLeaveRed">#BB2703</color>
+    <color name="separatorColor">#ececec</color>
+    <color name="separatorColorDark">#373736</color>
+    <color name="separatorColorHomeMenu">#B0965B</color>
+    <color name="separatorColorDark2">#262625</color>
+    <color name="colorTransBlack">#D9000000</color>
+
+
+    <color name="colorBrownT">#1AB99F61</color>
+
+    <color name="mcam_color_light">#FAFAFA</color>
+    <color name="mcam_color_dark">#424242</color>
+    <color name="beautify_brown_dark">#b1944f</color>
+    <color name="mcam_use_photo_btn_color">#3F51B5</color>
+    <color name="mcam_retake_photo_btn_color">#FF4081</color>
+    <color name="mcam_use_photo_txt_color">#ffffff</color>
+    <color name="mcam_retake_photo_txt_color">#ffffff</color>
+
+    <!--color resources added by gaurav-->
+    <color name="beautyfy_brown">#b99f62</color>
+    <color name="beautyfy_brown_light">#dccfb0</color>
+    <color name="beatyfy_brown_r">#e5ca89</color>
+    <color name="beautify_background_black">#151515</color>
+    <color name="beautify_light_black">#1F1F1F</color>
+    <color name="beautify_light_black_a6">#A61F1F1F</color>
+    <color name="beautify_light_black_dark">#151515</color>
+    <color name="beautify_text_white">#ffffff</color>
+    <color name="beautify_text_light_white">#B0B0B0</color>
+    <color name="beautify_deep_light_black">#303030</color>
+    <color name="beautify_black_ripple">#7f7d7e</color>
+    <color name="beautify_light_light_black">#343434</color>
+
+    <array name="array_dot_active">
+        <item>@color/beautyfy_brown</item>
+        <item>@color/beautyfy_brown</item>
+        <item>@color/beautyfy_brown</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/beautify_text_white</item>
+        <item>@color/beautify_text_white</item>
+        <item>@color/beautify_text_white</item>
+
+    </array>
+
+    <color name="beutify_light_white">#ADADAD</color>
+    <color name="home_drawer_txt_color">#3d4c55</color>
+    <color name="colorDeepLightWhite">#DCDCDC</color>
+
+</resources>

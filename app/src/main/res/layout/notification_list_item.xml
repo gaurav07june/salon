@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/setting_menu_item_bg"
+    android:padding="@dimen/_15sdp">
+
+    <com.beatutify.customviews.NMGTextView
+        android:id="@+id/salon_short_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/notification_salon_short_name_bg"
+        android:gravity="center"
+        android:text="SG"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_16sdp"
+        app:fontName="sf_ui_text_bold.otf" />
+
+    <com.beatutify.customviews.NMGTextView
+        android:id="@+id/notification_msg_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/_40sdp"
+        android:layout_toRightOf="@id/salon_short_name_tv"
+        android:text="lorem ipsum"
+        android:textColor="@color/beautify_text_light_white"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:paddingBottom="@dimen/_18sdp"
+        app:fontName="sf_ui_text_regular.otf"
+
+        />
+    <com.beatutify.customviews.NMGTextView
+        android:id="@+id/notification_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/notification_msg_tv"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/_12sdp"
+        android:text="5 minutes ago"
+        app:fontName="sf_ui_text_regular.otf"
+        />
+
+</RelativeLayout>
+</layout>

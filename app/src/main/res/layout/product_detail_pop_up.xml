@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_8sdp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <ImageView
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/img_product_logo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_250sdp" />
+        <ImageView
+            android:id="@+id/img_close"
+            android:padding="@dimen/_12sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_close_black_24dp"
+            android:background="@drawable/action_btn_bg"
+            android:layout_alignParentRight="true"/>
+        <RelativeLayout
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_product_logo">
+            <com.beatutify.customviews.NMGTextView
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_16sdp"
+                app:fontName="oswald_regular.ttf"
+                android:id="@+id/txt_product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bases Foundation"
+                android:textAllCaps="true"
+                />
+            <com.beatutify.customviews.NMGTextView
+                android:id="@+id/txt_product_category"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(Face)"
+                android:textColor="@color/beutify_light_white"
+                android:textSize="@dimen/_12sdp"
+                app:fontName="sf_ui_text_regular.otf"
+                android:layout_alignBaseline="@+id/txt_product_name"
+                android:layout_toRightOf="@+id/txt_product_name"/>
+
+            <com.beatutify.customviews.NMGTextView
+                android:id="@+id/txt_product_detail"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/beutify_light_white"
+                android:layout_below="@+id/txt_product_name"
+                android:text="@string/dummy_text"/>
+
+            <com.beatutify.customviews.NMGTextView
+                android:id="@+id/txt_product_cost"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_16sdp"
+                app:fontName="oswald_bold.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/beautyfy_brown"
+                android:text="$15"
+                android:layout_below="@+id/txt_product_detail"/>
+
+            <com.beatutify.customviews.AddRemoveItemButton
+                android:id="@+id/btn_add_remove_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_below="@+id/txt_product_detail">
+
+            </com.beatutify.customviews.AddRemoveItemButton>
+
+            <com.beatutify.customviews.NMGTextView
+                android:id="@+id/txt_product_quantity_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fontName="sf_ui_text_bold.otf"
+                android:text=""
+                android:visibility="visible"
+                android:textSize="@dimen/_11sdp"
+                android:textColor="@color/colorLeaveRed"
+                android:layout_below="@+id/txt_product_cost"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

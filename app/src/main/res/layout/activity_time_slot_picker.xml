@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.beatutify.activity.TimeSlotPickerActivity">
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/time_slot_day_tab_lay"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:elevation="@dimen/_5sdp"
+    >
+</android.support.v7.widget.RecyclerView>
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/time_slot_list_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/time_slot_day_tab_lay"
+    android:paddingBottom="@dimen/_65sdp"
+    android:clipToPadding="false"
+    android:background="@color/beautify_light_black"
+    ></android.support.v7.widget.RecyclerView>
+
+    <com.beatutify.customviews.NMGButton
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:background="@drawable/button_default_flat_bg"
+        android:text="@string/next"
+        android:clickable="true"
+        android:textColor="@color/beautify_text_white"
+        android:layout_alignParentBottom="true"
+        android:textSize="@dimen/btn_txt_size"
+
+        />
+</RelativeLayout>

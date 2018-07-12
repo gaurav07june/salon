@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data></data>
+
+<RelativeLayout
+    android:background="@color/beautyfy_brown"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_salon_logo"
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="@dimen/_110sdp"
+        android:layout_centerHorizontal="true"
+        android:transitionName="@string/salon_transition"
+        android:src="@mipmap/ic_launcher"
+        />
+
+    <HorizontalScrollView
+        android:scrollbars="none"
+        android:id="@+id/hrzscroll_salon_name"
+        android:layout_below="@+id/img_salon_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.beatutify.customviews.NMGTextView
+            android:id="@+id/txt_salon_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            app:fontName="oswald_regular.ttf"
+            android:textSize="@dimen/label_text_size"
+            android:text="Kinki crowns naturals"/>
+    </HorizontalScrollView>
+
+    <com.beatutify.customviews.NMGTextView
+        android:id="@+id/txt_booking_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hrzscroll_salon_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:textColor="@color/colorWhite"
+        android:text="23 Feb, 2018"
+        app:textAllCaps="true"
+        app:fontName="sf_ui_text_light.otf"
+        android:textSize="@dimen/txt_bigger_size"/>
+
+    <View
+        android:id="@+id/view_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_below="@+id/txt_booking_date"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@color/colorDeepLightWhite"/>
+
+    <com.beatutify.customviews.NMGTextView
+        android:id="@+id/txt_booking_slot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/morning"
+        android:textSize="@dimen/_15sdp"
+        app:fontName="sf_ui_text_regular.otf"
+        android:drawablePadding="@dimen/_5sdp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorWhite"
+        android:layout_below="@+id/view_divider"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginBottom="@dimen/_12sdp"
+        />
+
+    <!--<LinearLayout
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingRight="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+
+        android:layout_below="@+id/view_divider"
+        >
+        <RelativeLayout
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2">
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/img_user_icon"
+                android:layout_width="@dimen/small_icon_size"
+                android:layout_height="@dimen/small_icon_size"
+                android:src="@drawable/ic_user"
+                />
+            <com.beatutify.customviews.NMGTextView
+                android:id="@+id/txt_salon_employee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Timothy Krisheik"
+                android:textSize="@dimen/txt_normal_size"
+                app:fontName="sf_ui_text_regular.otf"
+                android:layout_centerHorizontal="true"
+                android:maxLines="1"
+                android:layout_toRightOf="@+id/img_user_icon"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textColor="@color/colorWhite"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <com.beatutify.customviews.NMGTextView
+                android:id="@+id/txt_booking_slot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/morning"
+                android:drawableLeft="@drawable/ic_calendar"
+                android:textSize="@dimen/txt_normal_size"
+                app:fontName="sf_ui_text_regular.otf"
+                android:drawablePadding="@dimen/_5sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textColor="@color/colorWhite"/>
+
+        </RelativeLayout>
+    </LinearLayout>-->
+
+
+</RelativeLayout>
+</layout>

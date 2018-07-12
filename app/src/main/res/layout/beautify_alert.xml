@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="@dimen/_250sdp"
+    android:layout_height="wrap_content"
+    android:paddingRight="@dimen/_10sdp"
+    android:paddingLeft="@dimen/_10sdp"
+    android:background="@drawable/distance_rounded_bg">
+
+    <ImageView
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/home_menu_logo"
+        android:tint="@color/beautify_light_black"/>
+
+    <com.beatutify.customviews.NMGTextView
+        android:id="@+id/txt_alert_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_15sdp"
+        android:layout_gravity="center_horizontal"
+        app:fontName="sf_ui_text_regular.otf"/>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.beatutify.customviews.NMGButton
+            android:id="@+id/btn_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:textColor="@color/beautyfy_brown"
+            android:textSize="@dimen/_15sdp"
+            app:fontName="oswald_regular.ttf"
+            android:text=""
+            android:background="@drawable/layout_black_bg_mat"/>
+        <com.beatutify.customviews.NMGButton
+            android:id="@+id/btn_yes"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:textColor="@color/beautyfy_brown"
+            android:textSize="@dimen/_15sdp"
+            app:fontName="oswald_regular.ttf"
+            android:text=""
+            android:background="@drawable/layout_black_bg_mat"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <data></data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorWhite"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        >
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_10sdp"
+            android:id="@+id/lnrlay_product_detail_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp">
+
+                <com.beatutify.customviews.NMGTextView
+                    android:id="@+id/txt_service_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$15"
+                    app:fontName="sf_ui_text_bold.otf"
+                    android:textSize="@dimen/_22sdp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_alignParentRight="true"/>
+                <HorizontalScrollView
+                    android:id="@+id/hrzscroll_product_name"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="@dimen/_42sdp"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+                    <com.beatutify.customviews.NMGTextView
+                        android:id="@+id/txt_service_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:fontName="oswald_regular.ttf"
+                        android:text="Black beauty mascara"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/txt_bigger_size"/>
+
+                </HorizontalScrollView>
+                <com.beatutify.customviews.NMGTextView
+                    android:id="@+id/txt_sevice_duration"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/hrzscroll_product_name"
+                    android:text=""
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:textSize="@dimen/txt_normal_size"
+                    android:textColor="@color/beutify_light_white"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@color/colorDeepLightWhite"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <RelativeLayout
+                android:id="@+id/rltlay_booking_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2">
+                <com.beatutify.customviews.NMGTextView
+                    android:id="@+id/txt_employee_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_user"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:text="employee name"
+                    android:textSize="@dimen/txt_normal_size"
+                    app:fontName="sf_ui_text_regular.otf"
+                    android:layout_toRightOf="@+id/img_user_icon"
+                    android:textColor="@color/beautify_light_black_a6"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".8">
+                <com.beatutify.customviews.NMGTextView
+                    android:id="@+id/txt_booking_time"
+                    android:layout_width="wrap_content"
+                    android:drawableLeft="@drawable/ic_user"
+                    android:layout_height="wrap_content"
+                    android:text="11: 30 "
+                    android:drawablePadding="@dimen/_3sdp"
+                    android:textSize="@dimen/txt_normal_size"
+                    app:fontName="sf_ui_text_regular.otf"
+                    android:layout_toRightOf="@+id/img_calendar_icon"
+                    android:textColor="@color/beautify_light_black_a6"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <com.beatutify.customviews.NMGTextView
+            android:id="@+id/txt_booking_additional_detail"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/beautify_light_black_a6"
+            android:textSize="@dimen/txt_normal_size"
+            android:text="@string/dummy_text"
+            app:fontName="sf_ui_text_regular.otf"
+            />
+
+        <View
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/beutify_light_white"/>
+    </LinearLayout>
+
+
+</layout>

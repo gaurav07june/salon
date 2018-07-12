@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BeautifyTheme" parent="BeautifyTheme.Base">
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+        <item name="android:windowSharedElementEnterTransition">@android:transition/move</item>
+        <item name="android:windowSharedElementExitTransition">@android:transition/move</item>
+        <item name="android:colorControlNormal">@color/beautyfy_brown</item>
+        <item name="android:colorControlActivated">@color/beautyfy_brown</item>
+        <item name="android:dropDownListViewStyle">@style/mySpinnerStyle</item>
+
+
+    </style>
+    <style name="mySpinnerStyle" parent="@android:style/Widget.Holo.Light.ListView">
+        <item name="android:divider">@color/separatorColorDark2</item>
+        <item name="android:background">@color/beautify_light_black</item>
+        <item name="android:listSelector">@drawable/spinner_item_selector</item>
+        <item name="android:dividerHeight">1dp</item>
+    </style>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+        <item name="android:windowExitTransition">@transition/main_exit</item>
+        <item name="android:windowReenterTransition">@transition/main_reenter</item>
+        <!--style added by gaurav-->
+    </style>
+    <!--style to change the floating text color-->
+    <style name="TextAppearance.App.TextInputLayout" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/beautyfy_brown</item>
+        <item name="android:textSize">@dimen/edt_floating_text_size</item>
+    </style>
+
+    <!--style for collapsing actionbar-->
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowEnterTransition">@transition/detail_enter</item>
+    </style>
+    <style name="TransparentText" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+        <style name="AppTheme.StatusBar.Transparent" parent="Theme.AppCompat.Light.NoActionBar">
+            <item name="colorPrimary">@color/colorPrimary</item>
+            <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+            <item name="colorAccent">@color/colorAccent</item>
+            <item name="android:windowContentOverlay">@null</item>
+            <item name="windowActionBarOverlay">true</item>
+            <item name="android:statusBarColor">@android:color/transparent</item>
+            <item name="android:windowContentTransitions">true</item>
+            <item name="android:dropDownListViewStyle">@style/mySpinnerStyle</item>
+        </style>
+
+    <style name="BeautifyThemeBrownish" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowBackground">@color/beautify_background_black</item>
+        <item name="colorPrimary">@color/beautyfy_brown</item>
+        <item name="colorPrimaryDark">@color/beautify_brown_dark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+        <item name="radioButtonStyle">@style/MyRadioButtonStyle</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:radioButtonStyle">@style/MyRadioButtonStyle</item>
+    </style>
+
+
+</resources>

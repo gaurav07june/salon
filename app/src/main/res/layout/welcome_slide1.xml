@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@color/beautify_background_black">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="150dp">
+        <com.beatutify.customviews.NMGTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/connect"
+            app:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/slide_title_small"
+            app:fontName="oswald_bold.ttf"/>
+        <com.beatutify.customviews.NMGTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/with_beautify"
+            app:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/slide_title_big"
+            app:fontName="oswald_bold.ttf"/>
+
+        <com.beatutify.customviews.NMGTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:text="@string/drescription"
+            android:textAlignment="center"
+            android:textColor="@color/beutify_light_white"
+            android:textSize="@dimen/slide_desc"
+            app:fontName="oswald_regular.ttf"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

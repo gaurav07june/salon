@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/morning_slot"
+        android:title="@string/morning"
+        android:iconTint="@color/colorWhite"
+        />
+    <item android:id="@+id/evening_slot"
+        android:title="@string/evening"
+        />
+</menu>

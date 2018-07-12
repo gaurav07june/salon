@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+
+    </data>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageButton
+        android:id="@+id/remove_item_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_remove"
+        android:tint="#ffffff"
+        android:background="@drawable/add_remove_btn_item_bg_lc"
+        />
+    <com.beatutify.customviews.NMGTextView
+        android:layout_toRightOf="@id/remove_item_btn"
+        android:id="@+id/quantity"
+        android:textColor="@color/colorWhite"
+        android:layout_width="@dimen/_25sdp"
+        app:fontName="sf_ui_text_bold.otf"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/remove_item_btn"
+        android:layout_alignBottom="@id/remove_item_btn"
+        android:gravity="center"
+        />
+    <ImageButton
+        android:layout_toRightOf="@id/quantity"
+        android:id="@+id/add_item_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add"
+        android:tint="#ffffff"
+        android:background="@drawable/add_remove_btn_item_bg_rc"
+        />
+</RelativeLayout>
+</layout>

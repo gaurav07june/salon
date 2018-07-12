@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<com.beatutify.customviews.NMGTextView
+    android:id="@+id/bill_amount_tv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Total: $30"
+    android:textColor="@color/colorAccent"
+    android:gravity="right"
+    android:padding="@dimen/_8sdp"
+    android:textSize="@dimen/_16sdp"
+    android:layout_marginLeft="@dimen/_15sdp"
+    android:layout_marginRight="@dimen/_15sdp"
+
+    />
+</LinearLayout>

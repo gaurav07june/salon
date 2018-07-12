@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="@dimen/_42sdp"
+    android:layout_height="wrap_content">
+<TextView
+    android:id="@+id/time_slot_weekday_name"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_40sdp"
+    android:text="Jan"
+    android:textSize="@dimen/_10sdp"
+    android:gravity="center"
+    android:elevation="@dimen/_5sdp"
+    android:textColor="@drawable/default_txt_selector"
+    />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/separatorColor"
+        />
+    <TextView
+        android:id="@+id/time_slot_day_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:gravity="center"
+        android:text="21"
+        android:textSize="@dimen/_20sdp"
+        android:background="@drawable/gray_white_bg_selector"
+        android:textColor="@drawable/black_grey_txt_selector"
+
+        />
+
+    <View
+        android:id="@+id/selection_strip"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_3sdp"
+        android:background="@drawable/time_slot_day_strip_color_selector"
+        />
+</LinearLayout>

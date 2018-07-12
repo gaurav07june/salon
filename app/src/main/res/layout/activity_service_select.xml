@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.beatutify.activity.ServiceSelectActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/beautify_light_black"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+
+        <com.beatutify.customviews.AppSearchViewLight
+            android:id="@+id/service_select_search_bar"
+            layout="@layout/search_view_light"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/service_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/service_select_search_bar"
+            android:background="@color/beautify_light_black"
+            android:paddingBottom="@dimen/_65sdp"
+            android:clipToPadding="false"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+
+
+        <com.beatutify.customviews.NMGButton
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:background="@drawable/button_default_flat_bg"
+            android:text="@string/submit"
+            android:clickable="true"
+            android:textColor="@color/beautify_text_white"
+            android:layout_alignParentBottom="true"
+            android:textSize="@dimen/btn_txt_size"
+
+            />
+    </RelativeLayout>
+</layout>

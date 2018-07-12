@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/beautify_light_black"
+    android:padding="@dimen/_8sdp"
+    android:orientation="vertical">
+<RelativeLayout
+    android:id="@+id/service_item_lay_1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <com.rey.material.widget.CheckBox
+
+        android:id="@+id/service_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cbd_tickColor="@color/colorBlack"
+        app:cbd_strokeColor="@color/colorAccent"
+        />
+    <LinearLayout
+
+        android:layout_toRightOf="@id/service_check_box"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_5sdp"
+        >
+
+        <com.beatutify.customviews.NMGTextView
+            android:id="@+id/service_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Service Title"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/colorWhite"
+            />
+
+        <com.beatutify.customviews.NMGTextView
+            android:id="@+id/service_duration_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(Duration: 20 min)"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/colorTxtDimGray" />
+        <com.beatutify.customviews.NMGTextView
+            android:id="@+id/service_desc_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lorem ipsum lorem lorem lorem"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/colorTxtDimGray" />
+    </LinearLayout>
+    <com.beatutify.customviews.NMGTextView
+        android:id="@+id/service_cost_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:paddingRight="@dimen/_5sdp"
+        android:text="$15"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/colorWhite"
+        android:layout_alignParentRight="true"
+
+        />
+</RelativeLayout>
+    <View
+        android:layout_below="@id/service_item_lay_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/separatorColorDark"
+        android:layout_marginTop="@dimen/_15sdp"
+        />
+</RelativeLayout>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data></data>
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+
+    >
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview_marriage_booking_list"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_5sdp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/beautify_light_black"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_64sdp"
+                android:background="@color/beautify_light_light_black">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_salon_logo"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_width="@dimen/_45sdp"
+                    android:transitionName="@string/salon_transition"
+                    android:layout_height="@dimen/_45sdp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_toRightOf="@+id/img_salon_logo"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_centerVertical="true">
+
+                    <HorizontalScrollView
+                        android:id="@+id/horizontal_scroll_salon_name"
+                        android:layout_width="match_parent"
+                        android:scrollbars="none"
+                        android:layout_height="wrap_content">
+                        <com.beatutify.customviews.NMGTextView
+                            android:id="@+id/txt_salon_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/txt_bigger_size"
+                            android:text=""
+                            android:textColor="@color/colorWhite"
+                            app:fontName="oswald_regular.ttf"
+                            android:textAllCaps="true"
+                            android:maxLines="1"/>
+
+                    </HorizontalScrollView>
+                    <ImageView
+                        android:id="@+id/img_address_icon"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_width="@dimen/_11sdp"
+                        android:layout_height="@dimen/_13sdp"
+                        android:src="@drawable/ic_locatio_icon"
+                        android:scaleType="fitXY"
+                        android:layout_below="@id/horizontal_scroll_salon_name"/>
+
+                    <HorizontalScrollView
+                        android:scrollbars="none"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/img_address_icon"
+                        android:layout_below="@+id/horizontal_scroll_salon_name">
+                        <com.beatutify.customviews.NMGTextView
+                            android:id="@+id/txt_salon_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            app:fontName="sf_ui_text_regular.otf"
+                            android:textColor="@color/beutify_light_white"
+                            android:textSize="@dimen/txt_normal_size"
+                            android:text=""/>
+
+                    </HorizontalScrollView>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrlay_marriage_booking_slot"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/beautify_light_black"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <RelativeLayout
+                    android:visibility="visible"
+                    android:id="@+id/rltlay_booking_date"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <com.beatutify.customviews.NMGTextView
+                        android:id="@+id/txt_booking_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_calendar"
+                        android:drawablePadding="@dimen/_3sdp"
+                        android:text=""
+                        android:textSize="@dimen/txt_normal_size"
+                        app:fontName="sf_ui_text_regular.otf"
+                        android:layout_toRightOf="@+id/img_user_icon"
+                        android:textColor="@color/beutify_light_white"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <com.beatutify.customviews.NMGTextView
+                        android:id="@+id/txt_booking_slot"
+                        android:layout_width="wrap_content"
+                        android:drawableLeft="@drawable/ic_calendar"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:drawablePadding="@dimen/_3sdp"
+                        android:textSize="@dimen/txt_normal_size"
+                        app:fontName="sf_ui_text_regular.otf"
+                        android:layout_toRightOf="@+id/img_calendar_icon"
+                        android:textColor="@color/beutify_light_white"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/lnrlay_general_booking_slot"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/beautify_light_black"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <RelativeLayout
+                    android:visibility="visible"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <com.beatutify.customviews.NMGTextView
+                        android:id="@+id/txt_employee_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:drawableLeft="@drawable/ic_user"
+                        android:textSize="@dimen/normal_small_text"
+                        app:fontName="sf_ui_text_regular.otf"
+
+                        android:textColor="@color/beutify_light_white"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <com.beatutify.customviews.NMGTextView
+                        android:id="@+id/txt_date_time_slot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:drawableLeft="@drawable/ic_calendar"
+                        android:textSize="@dimen/normal_small_text"
+                        app:fontName="sf_ui_text_regular.otf"
+                        android:textColor="@color/beutify_light_white"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+            <View
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/beautify_deep_light_black"/>
+            <com.beatutify.customviews.NMGTextView
+                android:id="@+id/txt_salon_detail"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                app:fontName="sf_ui_text_regular.otf"
+                android:textColor="@color/beutify_light_white"
+                android:textSize="@dimen/txt_normal_size"/>
+
+            <com.beatutify.customviews.NMGButton
+                android:id="@+id/btn_view_booking"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                app:fontName="oswald_regular.ttf"
+                android:text="@string/view_bookings"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/btn_txt_size"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@drawable/button_black_bg"/>
+
+            <com.beatutify.customviews.NMGTextView
+                android:id="@+id/txt_past_booking_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fontName="oswald_regular.ttf"
+                android:text="@string/completed"
+                android:textAllCaps="true"
+                android:visibility="gone"
+                android:textColor="@color/beautyfy_brown"
+                android:textSize="@dimen/label_text_size"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:layout_gravity="center_horizontal"
+                />
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+</layout>

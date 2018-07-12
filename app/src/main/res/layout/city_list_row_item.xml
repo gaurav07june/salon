@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/beautify_light_black">
+
+    <com.beatutify.customviews.NMGTextView
+        android:id="@+id/txt_city_item"
+        android:layout_width="wrap_content"
+        android:text="city"
+        android:textColor="@color/colorWhite"
+        android:layout_height="@dimen/edt_text_size"
+        android:layout_marginLeft="@dimen/_10sdp"
+        app:fontName="sf_ui_text_regular.otf"/>
+
+
+
+</LinearLayout>

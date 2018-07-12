@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_55sdp"
+    android:gravity="center_vertical"
+    android:background="@color/beautify_light_black">
+<com.rey.material.widget.RadioButton
+    android:id="@+id/employee_radio_btn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_5sdp"
+    app:rbd_strokeColor="@color/colorAccent"
+    android:checked="false"
+    />
+    <com.beatutify.customviews.NMGTextView
+        android:id="@+id/employee_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Employee Name"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/colorWhite"
+        />
+</LinearLayout>

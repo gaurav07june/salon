@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.beatutify.activity.EmployeeSelectActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/beautify_light_black"
+    >
+
+    <com.beatutify.customviews.AppSearchViewLight
+        android:id="@+id/employee_select_search_bar"
+        layout="@layout/search_view_light"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/employee_select_search_bar"
+        android:id="@+id/employee_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/_65sdp"
+        />
+
+
+    <com.beatutify.customviews.NMGButton
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:background="@drawable/button_default_flat_bg"
+        android:text="@string/next"
+        android:clickable="true"
+        android:textColor="@color/beautify_text_white"
+        android:layout_alignParentBottom="true"
+        android:textSize="@dimen/btn_txt_size"
+
+        />
+
+</RelativeLayout>
+</layout>

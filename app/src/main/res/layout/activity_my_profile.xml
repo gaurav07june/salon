@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/beautify_light_black">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorAccent"
+                app:titleEnabled="false"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/my_profile_toolbar"
+                    android:layout_width="match_parent"
+                    app:layout_collapseMode="pin"
+                    app:titleTextAppearance="@style/App.Theme.ToolbarTitleUppercase"
+                    android:layout_height="?actionBarSize" />
+
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:behavior_overlapTop="@dimen/_50sdp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/profile_img_lay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/my_profile_user_img_iv"
+                        android:layout_width="@dimen/_130sdp"
+                        android:layout_height="@dimen/_130sdp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@mipmap/ic_launcher" />
+
+                    <com.beatutify.customviews.NMGTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/my_profile_user_img_iv"
+                        android:layout_gravity="center_horizontal"
+                        android:padding="@dimen/_5sdp"
+                        android:text="Edit Photo"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/_12sdp"
+                        app:fontName="sf_ui_text_regular.otf" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/profile_detail_input_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <com.beatutify.customviews.NMGEditText
+                        android:id="@+id/edt_input_first_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:background="@drawable/round_corner_edit"
+                       
+                        android:drawablePadding="@dimen/_14sdp"
+                        android:gravity="center_vertical"
+                        android:hint="@string/first_name"
+                        android:inputType="textCapWords"
+                        android:maxLines="1"
+                        android:paddingBottom="@dimen/_15sdp"
+                        android:paddingLeft="@dimen/edt_padding_left"
+                        android:paddingTop="@dimen/_15sdp"
+                        android:textColor="@color/colorWhite"
+                        android:textColorHint="@color/beautify_text_light_white"
+                        android:textSize="@dimen/_14sdp"
+                        app:fontName="sf_ui_text_regular.otf" />
+
+                    <com.beatutify.customviews.NMGEditText
+                        android:id="@+id/edt_input_last_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:background="@drawable/round_corner_edit"
+                       
+                        android:drawablePadding="@dimen/_14sdp"
+                        android:gravity="center_vertical"
+                        android:hint="@string/last_name"
+                        android:inputType="textCapWords"
+                        android:maxLines="1"
+                        android:paddingBottom="@dimen/_15sdp"
+                        android:paddingLeft="@dimen/edt_padding_left"
+                        android:paddingTop="@dimen/_15sdp"
+                        android:textColor="@color/colorWhite"
+                        android:textColorHint="@color/beautify_text_light_white"
+                        android:textSize="@dimen/_14sdp"
+                        app:fontName="sf_ui_text_regular.otf" />
+
+                    <com.beatutify.customviews.NMGEditText
+                        android:id="@+id/edt_input_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:background="@drawable/round_corner_edit"
+                       
+                        android:drawablePadding="@dimen/_14sdp"
+                        android:gravity="center_vertical"
+                        android:hint="@string/email"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:paddingBottom="@dimen/_15sdp"
+                        android:paddingLeft="@dimen/edt_padding_left"
+                        android:paddingTop="@dimen/_15sdp"
+                        android:textColor="@color/colorWhite"
+                        android:textColorHint="@color/beautify_text_light_white"
+                        android:textSize="@dimen/_14sdp"
+                        app:fontName="sf_ui_text_regular.otf" />
+
+                    <com.beatutify.customviews.NMGEditText
+                        android:id="@+id/edt_input_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:background="@drawable/round_corner_edit"
+                       
+                        android:drawablePadding="@dimen/_14sdp"
+                        android:gravity="center_vertical"
+                        android:hint="@string/mobile_no"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:paddingBottom="@dimen/_15sdp"
+                        android:paddingLeft="@dimen/edt_padding_left"
+                        android:paddingTop="@dimen/_15sdp"
+                        android:textColor="@color/colorWhite"
+                        android:textColorHint="@color/beautify_text_light_white"
+                        android:textSize="@dimen/_14sdp"
+                        app:fontName="sf_ui_text_regular.otf" />
+                </LinearLayout>
+
+                <com.beatutify.customviews.NMGButton
+                    android:id="@+id/btn_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginBottom="@dimen/_100sdp"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:background="@drawable/button_default_bg"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="Save"
+                    android:textAllCaps="true"
+                    android:textColor="@color/beautify_text_white"
+                    android:textSize="@dimen/_18sdp"
+                    app:fontName="oswald_regular.ttf" />
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.design.widget.CoordinatorLayout>
+</layout>

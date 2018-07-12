@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data></data>
+
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context="com.beatutify.activity.MarriageBookingDetailActivity"
+    tools:showIn="@layout/activity_marriage_booking_detail"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginLeft="@dimen/_16sdp"
+    android:layout_marginRight="@dimen/_16sdp"
+    >
+
+    <com.beatutify.customviews.NMGTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:text="@string/brides_maid"
+        android:textSize="@dimen/txt_bigger_size"
+        app:fontName="oswald_bold.ttf"
+        app:textAllCaps="true"
+        android:textAllCaps="true"/>
+    <LinearLayout
+        android:id="@+id/lnrlay_bridesmaid_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_bridesmaid_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="true">
+        </android.support.v7.widget.RecyclerView>
+        <!--<include
+            android:id="@+id/layout_add_bridesmaid_row"
+            layout="@layout/brides_maid_row"/>-->
+    </LinearLayout>
+    <View
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/colorGray1"/>
+    <com.beatutify.customviews.NMGTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/txt_bigger_size"
+        android:text="@string/comment"
+        app:textAllCaps="true"
+        android:textAllCaps="true"
+        app:fontName="oswald_bold.ttf"
+        />
+    <com.beatutify.customviews.NMGTextView
+        android:id="@+id/txt_booking_additional_detail"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/beautify_deep_light_black"
+        android:textSize="@dimen/txt_normal_size"
+        android:text=""
+        app:fontName="sf_ui_text_regular.otf"
+        />
+</LinearLayout>
+</layout>

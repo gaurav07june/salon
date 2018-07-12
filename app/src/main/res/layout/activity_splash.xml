@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.codetail.widget.RevealFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.beatutify.activity.SplashActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    >
+<RelativeLayout
+    android:id="@+id/splash_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beautify_background_black">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        >
+        <ImageView
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
+            android:src="@drawable/beautify_logo"/>
+
+        <com.beatutify.customviews.NMGTextView
+            android:id="@+id/txt_beutify_name"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textAllCaps="true"
+            android:textSize="@dimen/_38sdp"
+            android:textColor="@color/beautyfy_brown"
+            app:fontName="beautify_splash_fonts.ttf"
+            />
+
+        <com.beatutify.customviews.NMGTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/beauty_a_touch_away"
+            android:textSize="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textColor="@color/beautyfy_brown"
+            app:fontName="beautify_splash_fonts.ttf"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
+</io.codetail.widget.RevealFrameLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:paddingTop="@dimen/_25sdp"
+
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.beatutify.customviews.NMGTextView
+            android:id="@+id/NMGTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/fb_enter_additional_details_msg"
+            android:textColor="@color/colorPrimaryDark"
+
+            android:textSize="@dimen/_16sdp" />
+
+        <com.beatutify.customviews.NMGEditText
+            android:id="@+id/enter_email_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_35sdp"
+            android:layout_marginRight="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:hint="@string/enter_email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/home_drawer_txt_color"
+            android:textSize="@dimen/_14sdp"
+            app:backgroundTint="@color/colorAccent" />
+
+        <com.beatutify.customviews.NMGEditText
+            android:id="@+id/enter_address_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_35sdp"
+            android:layout_marginRight="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/enter_address"
+            android:maxLines="1"
+            android:paddingBottom="@dimen/_8sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:textColor="@color/home_drawer_txt_color"
+            android:textSize="@dimen/_14sdp"
+            app:backgroundTint="@color/colorAccent" />
+
+        <com.reginald.editspinner.EditSpinner
+            android:id="@+id/city_list_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_35sdp"
+            android:layout_marginRight="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:drawableRight="@drawable/ic_arrow_down"
+            android:editable="false"
+            android:hint="@string/select_city"
+            android:textColor="@color/home_drawer_txt_color"
+            android:textSize="@dimen/_14sdp"
+            app:dropDownDrawableHeight="@dimen/_25sdp"
+            app:dropDownDrawableSpacing="@dimen/_15sdp"
+            app:dropDownDrawableWidth="@dimen/_25sdp"
+            android:drawableTint="@color/colorAccent"
+            app:backgroundTint="@color/colorAccent"
+
+            />
+
+        <com.beatutify.customviews.NMGButton
+            android:id="@+id/enter_email_btn"
+            style="@style/ButtonRippleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:background="@drawable/brown_btn_background"
+            android:gravity="center"
+            android:text="@string/submit"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_14sdp" />
+    </LinearLayout>
+    <com.rey.material.widget.ProgressView
+        android:id="@+id/circular_progress_view"
+        android:layout_width="@dimen/_48sdp"
+        android:layout_height="@dimen/_48sdp"
+        app:pv_autostart="true"
+        app:pv_circular="true"
+        app:pv_progressStyle="@style/AppCircularProgressViewStyle"
+        app:pv_progressMode="indeterminate"
+        android:layout_centerInParent="true"
+        />
+</RelativeLayout>

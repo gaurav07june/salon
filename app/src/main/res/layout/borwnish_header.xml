@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+    </data>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:paddingRight="@dimen/activity_horizontal_margin">
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="@dimen/_8sdp"
+        android:layout_height="@dimen/small_icon_size"
+        android:src="@drawable/ic_back_arrow_white"
+        android:scaleType="fitXY"
+        android:layout_centerVertical="true"/>
+    <com.beatutify.customviews.NMGTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_title_header"
+        android:layout_toRightOf="@+id/img_back"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:textSize="@dimen/label_text_size"
+        android:textColor="@color/colorWhite"
+        android:layout_centerVertical="true"
+        android:text=""
+        app:fontName="oswald_regular.ttf"
+        android:textAllCaps="true"/>
+</RelativeLayout>
+</layout>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+
+    <data>
+
+        <variable
+            name="loginRequest"
+            type="com.beatutify.model.LoginRequestModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/login_bg" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorTransBlack" />
+        </FrameLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingBottom="@dimen/_55sdp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:focusableInTouchMode="true">
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="0px"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin">
+
+                    <ImageView
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="30dp"
+                        android:src="@drawable/beautify_logo" />
+
+                    <com.beatutify.customviews.NMGEditText
+                        android:id="@+id/edt_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/_15sdp"
+                        android:paddingBottom="@dimen/_15sdp"
+                        android:background="@drawable/round_corner_edit"
+                        android:drawableLeft="@drawable/ic_user"
+                        android:drawablePadding="@dimen/edt_drawable_padding"
+                        android:gravity="center_vertical"
+                        android:hint="@string/hint_email"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/edt_padding_left"
+                        android:paddingRight="@dimen/_8sdp"
+                        android:text="@={loginRequest.email_phone}"
+                        android:textColor="@color/colorWhite"
+                        android:textColorHint="@color/beautify_text_light_white"
+                        android:textSize="@dimen/edt_text_size"
+                        app:fontName="sf_ui_text_regular.otf" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <com.beatutify.customviews.NMGEditText
+                            android:id="@+id/edt_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/_15sdp"
+                            android:paddingBottom="@dimen/_15sdp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:background="@drawable/round_corner_edit"
+                            android:drawableLeft="@drawable/ic_password"
+                            android:drawablePadding="@dimen/edt_drawable_padding"
+                            android:gravity="center_vertical"
+                            android:hint="@string/hint_password"
+                            android:inputType="textPassword"
+                            android:paddingLeft="@dimen/edt_padding_left"
+                            android:paddingRight="@dimen/_8sdp"
+                            android:text="@={loginRequest.password}"
+                            android:textColor="@color/colorWhite"
+                            android:textColorHint="@color/beautify_text_light_white"
+                            android:textSize="@dimen/edt_text_size"
+                            app:fontName="sf_ui_text_regular.otf" />
+
+                        <ImageView
+                            android:id="@+id/img_btn_show_password"
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:background="@android:color/transparent"
+                            android:scaleType="center"
+                            android:src="@drawable/ic_show_password_selector"
+                            android:tint="@drawable/ic_show_password_tint_selector"
+                            android:visibility="visible"
+
+
+                            />
+                    </RelativeLayout>
+
+                    <com.beatutify.customviews.NMGTextView
+                        android:id="@+id/txt_forgot_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/forgot_password"
+                        android:textColor="@color/beautyfy_brown"
+                        android:textSize="@dimen/_12sdp"
+                        app:fontName="sf_ui_text_regular.otf" />
+
+                    <com.beatutify.customviews.NMGButton
+                        android:id="@+id/btn_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_marginTop="22dp"
+                        android:background="@drawable/button_default_bg"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="@string/login"
+                        android:textColor="@color/beautify_text_white"
+                        android:textSize="@dimen/_18sdp"
+                        app:fontName="oswald_regular.ttf" />
+
+                    <com.beatutify.customviews.NMGTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/_8sdp"
+                        android:text="@string/or_string"
+                        android:textColor="@color/beautify_text_light_white"
+                        android:textSize="@dimen/_12sdp"
+                        app:fontName="sf_ui_text_regular.otf" />
+
+                    <com.beatutify.customviews.NMGButton
+                        android:id="@+id/btn_login_facebook"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:background="@drawable/button_black_bg"
+                        android:clickable="true"
+                        android:drawableLeft="@drawable/ic_facebook"
+                        android:drawablePadding="@dimen/_20sdp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/_40sdp"
+
+                        android:text="@string/login_facebook"
+                        android:textColor="@color/beautyfy_brown"
+                        android:textSize="@dimen/_18sdp"
+                        app:fontName="oswald_regular.ttf" />
+
+                    <com.beatutify.customviews.NMGTextView
+                        android:id="@+id/txtNotMember"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:text="@string/not_member"
+                        android:textColor="@color/beautify_text_light_white"
+                        android:textSize="@dimen/normal_small_text"
+                        app:fontName="sf_ui_text_regular.otf" />
+
+                    <com.beatutify.customviews.NMGTextView
+                        android:id="@+id/txt_signup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/sign_up"
+                        android:textColor="@color/beautyfy_brown"
+                        android:textSize="@dimen/label_text_size"
+                        app:fontName="oswald_regular.ttf" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="10dp"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+
+                    >
+
+                    <com.beatutify.customviews.NMGTextView
+                        android:id="@+id/txt_skip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="@string/skip"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/bottom_label_text_size"
+                        app:fontName="oswald_regular.ttf" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+</layout>

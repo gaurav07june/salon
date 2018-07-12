@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beautify_light_black"
+    >
+  <com.beatutify.customviews.NMGTextView
+      android:id="@+id/booking_fee_header"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="TOTAL PRICE"
+      android:textColor="@color/colorAccent"
+      android:textSize="@dimen/_18sdp"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="@dimen/_25sdp"
+      android:textStyle="bold"
+      />
+    <ImageView
+        android:id="@+id/booking_fee_dlg_close_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_close_black_24dp"
+        android:tint="@color/colorWhite"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/_20sdp"
+        />
+
+  <com.beatutify.customviews.ServiceBillListView
+      android:id="@+id/service_bill_list_view"
+      android:layout_below="@id/booking_fee_header"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginTop="@dimen/_45sdp"
+      >
+
+  </com.beatutify.customviews.ServiceBillListView>
+
+</RelativeLayout>

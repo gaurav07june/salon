@@ -1,0 +1,12 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/separatorColorHomeMenu"/>
+        </shape>
+    </item>
+    <item android:bottom="@dimen/_1sdp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/colorAccent"/>
+        </shape>
+    </item>
+    </layer-list>
